@@ -1,0 +1,89 @@
+:root {
+  font-size: 62.5%;
+  --font-family: "Josefin Sans", sans-serif;
+  --font-size: 14px;
+  --line-height: 20px;
+  --color-main: #404040;
+  --action-button-color: #444134;
+  --action-button-color-background: #bad5c8;
+  --action-button-color-background-hover: #b0cabc;
+  --action-button-box-shadow: 0px 4px 4px 0px #81814629;
+  --background-main: linear-gradient(180deg, #e2e9e5 0%, #ececec 100%);
+  --background-disclaimer: #f8f6f1;
+  --background-footer: #edeae2;
+  --gap-small: 8px;
+  --gap-medium: 16px;
+  --gap-large: 24px;
+  --gap-xlarge: 48px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: 400;
+  line-height: var(--line-height);
+  color: var(--color-main);
+}
+
+body {
+  background: var(--background-main);
+}
+
+h1 {
+  font-family: "Young Serif", serif;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+  position: relative;
+}
+
+.action-button-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+}
+
+.action-button {
+  display: inline-block;
+  background-color: var(--action-button-color-background);
+  padding: 1em 0.9em;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.45em;
+  font-weight: 700;
+  color: var(--action-button-color);
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  width: calc(50% - 2.27em);
+  box-shadow: var(--action-button-box-shadow);
+  transition: background-color 1s ease;
+  text-decoration: none;
+}
+
+.action-button:hover {
+  background-color: var(--action-button-color-background-hover);
+  transition: none;
+}
+
+.action-button.full-width {
+  width: 100%;
+}

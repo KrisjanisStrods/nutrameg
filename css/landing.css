@@ -1,0 +1,207 @@
+/* Layout Containers */
+.container {
+  margin: 0 auto;
+  max-width: 1140px;
+  padding: 0 28px;
+}
+
+/* Header Section */
+.header-section {
+  padding-top: var(--gap-large);
+  padding-bottom: var(--gap-large);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 114px;
+  height: 56px;
+}
+
+.logo img {
+  width: 120%;
+  height: 100%;
+  object-fit: cover;
+  transform: translateX(-8%);
+}
+
+.login {
+  width: 24px;
+  height: 24px;
+}
+
+.login img {
+  width: 100%;
+  height: 100%;
+}
+
+.landing-section-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.landing-section {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.landing-section h1 {
+  font-family: "Young Serif", serif;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.landing-section h2 {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.goal-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 48px;
+}
+
+.happy-woman-image {
+  position: relative;
+  flex-grow: 1;
+  height: auto;
+}
+
+.happy-woman-image .background-circle {
+  background-color: #dbcdb3;
+  width: 120vw;
+  height: 120vw;
+  border-radius: 50%;
+  position: absolute;
+  right: -20%;
+  bottom: -60%;
+  z-index: -1;
+}
+
+.happy-woman-image img {
+  height: auto;
+  width: 100%;
+}
+
+/* Disclaimer Section */
+.disclaimer-background {
+  background-color: var(--background-disclaimer);
+}
+
+.disclaimer-section {
+  padding-top: var(--gap-xlarge);
+  padding-bottom: var(--gap-xlarge);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Footer Section */
+.footer-background {
+  background-color: var(--background-footer);
+}
+
+.footer-section {
+  padding-top: 28px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-large);
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-medium);
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-small);
+}
+
+.contact-section h3 {
+  font-weight: 600;
+}
+
+.footer-link-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-large);
+}
+
+.terms-link {
+  text-decoration: none;
+}
+
+.terms-link img {
+  margin-left: 4px;
+  width: 7px;
+  transform: translateY(1px);
+}
+
+footer .logo {
+  width: 80px;
+  height: 40px;
+}
+
+@media (max-width: 374px) {
+  .landing-section h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .action-button {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 830px) {
+  .landing-section-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .landing-section {
+    width: clamp(264px, 32vw, 524px);
+  }
+
+  .landing-section {
+    font-size: clamp(30px, 3.65vw, 40px);
+  }
+
+  .landing-section h1 {
+    margin-top: 60px;
+    font-size: 1em;
+    line-height: 1.33em;
+  }
+
+  .goal-container {
+    margin-bottom: 122px;
+  }
+
+  .action-button {
+    font-size: 15px;
+  }
+
+  .happy-woman-image .background-circle {
+    width: 712px;
+    height: 712px;
+    right: -210px;
+    bottom: -455px;
+    border-radius: 712px;
+  }
+
+  .happy-woman-image img {
+    height: 100%;
+    width: auto;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
